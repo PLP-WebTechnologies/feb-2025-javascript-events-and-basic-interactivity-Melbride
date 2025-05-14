@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--  A Button to Trigger Events -->
+  <button id="magicBtn">Click Me!</button>
+
+  <!--  Input field for keypress detection -->
+  <input type="text" id="keyInput" placeholder="Type something..." />
+  <p id="keyResult"></p>
+
+  <!--  Simple Image Gallery -->
+  <div>
+    <img id="galleryImg" src="https://via.placeholder.com/200?text=Image+1" alt="Gallery Image" />
+    <button onclick="nextImage()">Next Image</button>
+  </div>
+
+  <!--  Tab-style Content -->
+  <div>
+    <button onclick="openTab('tab1')">Tab 1</button>
+    <button onclick="openTab('tab2')">Tab 2</button>
+
+    <div id="tab1" class="tab-content" style="display: block;">
+      <p>This is content for Tab 1.</p>
+    </div>
+    <div id="tab2" class="tab-content" style="display: none;">
+      <p>This is content for Tab 2.</p>
+    </div>
+  </div>
+
+  <!-- Form for Validation -->
+  <form id="signupForm">
+    <h3>Sign Up</h3>
+    <input type="email" id="email" placeholder="Enter your email" required />
+    <input type="password" id="password" placeholder="Enter password" required />
+    <p id="passwordFeedback"></p>
+    <button type="submit">Submit</button>
+    <p id="formMessage"></p>
+  </form>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
